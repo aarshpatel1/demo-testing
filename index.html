@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dynamic-background {
+            width: 200px;
+            height: 200px;
+            background-color: #ffffff;
+            /* Example background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 50px;
+            color: #ffffff;
+            /* Default white */
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dynamic-background">
+        <i class="icon">★</i>
+    </div>
+    <button id="change-bg">Change Background</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery mouseenter and mouseleave Example</title>
+    <style>
+        .hover-box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            color: white;
+            margin: 100px auto;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hover-box">Hover me!</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hover-box").mouseenter(function () {
+                $(this).css("background-color", "#2ecc71"); // Green on hover
+            });
+
+            $(".hover-box").mouseleave(function () {
+                $(this).css("background-color", "#3498db"); // Original blue color on leave
+            });
+        });
+    </script>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizable Section</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style>
+        .resizable {
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resizable">
+        <p>Resize me!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $(".resizable").resizable();
+        });
+    </script>
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Resizable - Animate</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        #resizable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+        }
+
+        #resizable h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .ui-resizable-helper {
+            border: 1px dotted gray;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#resizable").resizable({
+                animate: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="resizable" class="ui-widget-content">
+        <h3 class="ui-widget-header">Animate</h3>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable and Resizable Section</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style>
+        #draggable-resizable {
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="draggable-resizable">
+        <p>Drag and Resize me!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            // Make the div both draggable and resizable
+            $("#draggable-resizable").draggable().resizable();
+        });
+    </script>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable and Resizable Section</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style>
+        #draggable-resizable {
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="draggable-resizable">
+        <p>Drag and Resize me!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            // Make the div draggable and resizable
+            $("#draggable-resizable").draggable().resizable({
+                // Set min and max constraints for resize
+                minWidth: 150,
+                minHeight: 100,
+                start: function (event, ui) {
+                    // Remove maxWidth and maxHeight when resizing starts
+                    $(this).resizable("option", "maxWidth", null);
+                    $(this).resizable("option", "maxHeight", null);
+                },
+                stop: function (event, ui) {
+                    // After resizing, reapply the maxWidth and maxHeight if necessary
+                    $(this).resizable("option", "maxWidth", 500);
+                    $(this).resizable("option", "maxHeight", 400);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable and Resizable Section</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style>
+        #draggable-resizable {
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="draggable-resizable">
+        <p>Drag and Resize me!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $("#draggable-resizable").draggable().resizable({
+                minWidth: 150,
+                minHeight: 100,
+                resize: function (event, ui) {
+                    const element = $(this);
+
+                    // Ensure the element resizes back, without hitting hard limits
+                    if (ui.size.width > 500) {
+                        ui.size.width = 500;
+                    }
+                    if (ui.size.height > 400) {
+                        ui.size.height = 400;
+                    }
+
+                    // Apply min size checks manually
+                    if (ui.size.width < 150) {
+                        ui.size.width = 150;
+                    }
+                    if (ui.size.height < 100) {
+                        ui.size.height = 100;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html> -->
